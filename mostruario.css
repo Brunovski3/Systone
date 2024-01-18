@@ -6,9 +6,9 @@ padding: 20px;
 }
 
 #mostruario {
-display: grid;
-grid-template-columns: 335px 1fr 1fr 1fr;
-grid-gap: 20px;
+    display: grid;
+    grid-template-columns: 500px 1fr 1fr 1fr;
+    margin: 0 50px;
 }
 
 .categoria {
