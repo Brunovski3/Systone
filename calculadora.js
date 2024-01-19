@@ -4,8 +4,8 @@
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
     "Branco Dallas": 345,
-    "Branco Paraná Claro": 1700,
-    "Branco Paraná Escuro": 1300,
+    "Branco Paraná Claro": 1800,
+    "Branco Paraná Escuro": 1400,
     "Branco Prime": 1000,
     "Branco Siena": 540,
     "Cinza Castelo": 300,
@@ -24,13 +24,13 @@
     "Santa Cecília": 345,
     "Travertino": 400,
     "Verde": 350,
-    "Via Láctea": 600
+    "Via Láctea": 650
     };
 
     const acabamentos = {
     "Boleado": 70,
     "Reto": 50,
-    "Meia esquadria": 70
+    "Meia esquadria": 80
     };
 
     const cubas = {
