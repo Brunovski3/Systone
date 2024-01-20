@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", init);
 let ordenacao = "preco"; // Define a ordenação inicial como "preco"
 
 // Função para exibir o mostruário quando o botão for clicado
-function mostrarMostruario() {
+function mostrar_mostruario() {
 const mostruario = document.getElementById("mostruario");
 if (mostruario.style.display === "none") {
 mostruario.style.display = "grid";

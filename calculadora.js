@@ -1,4 +1,6 @@
-    // Dados de materiais, acabamentos, cubas e cooktops
+    // Dados de materiais, acabamentos, cubas e cooktop;
+
+
     const materiais = {
     "Ardósia": 230,
     "Arabesco Samoa": 290,
@@ -15,7 +17,7 @@
     "Marrom Café": 620,
     "Marrom Café Comercial": 425,
     "Marrom Coral": 450,
-    "Ocre Itatibira": 300,
+    "Ocre Itabira": 300,
     "Piracema": 580,
     "Preto Absoluto": 1575,
     "Preto Escovado": 650,
@@ -47,216 +49,219 @@
     "Sem Corte": 0,
     "Com Corte Cooktop": 60
     };
+
     // Função para calcular o valor total
-    function calcularValorTotal() {
+    function calculo_valor_total() {
+
     // Obtenção dos valores selecionados
     const material = document.getElementById("material").value;
-    const precoMaterial = materiais[material];
-    const precoCubas = cubas[document.getElementById("cubas").value];
-    const cooktop_ = cooktop[document.getElementById("cooktop").value];
+    const p_materiais = materiais[material];
+    const p_cubas = cubas[document.getElementById("cubas").value];
+    const p_cooktop = cooktop[document.getElementById("cooktop").value];
     const acabamento = document.getElementById("acabamento").value;
-    const precoAcabamento = acabamentos[acabamento];
-    const comprimentoPia = parseFloat(document.getElementById("comprimento-pia").value);
-    const larguraPia = parseFloat(document.getElementById("largura-pia").value);
-    const larguraSaia = parseFloat(document.getElementById("largura-saia").value);
-    const larguraEspelho = parseFloat(document.getElementById("largura-espelho").value);
-    const ladosMaiores = parseInt(document.getElementById("lados-maiores-saia").value);
-    const ladosMenores = parseInt(document.getElementById("lados-menores-saia").value);
-    const ladosMaioresEspelho = parseInt(document.getElementById("lados-maiores-espelho").value);
-    const ladosMenoresEspelho = parseInt(document.getElementById("lados-menores-espelho").value);
+    const p_acabamento = acabamentos[acabamento];
+    const comp_pia = parseFloat(document.getElementById("comprimento-pia").value);
+    const larg_pia = parseFloat(document.getElementById("largura-pia").value);
+    const larg_saia = parseFloat(document.getElementById("largura-saia").value);
+    const larg_espelho = parseFloat(document.getElementById("largura-espelho").value);
+    const lados_M_saia = parseInt(document.getElementById("lados-maiores-saia").value);
+    const lados_m_saia = parseInt(document.getElementById("lados-menores-saia").value);
+    const lados_M_espelho = parseInt(document.getElementById("lados-maiores-espelho").value);
+    const lados_m_espelho = parseInt(document.getElementById("lados-menores-espelho").value);
 
 
     // Cálculos
-    let areaPia = larguraPia * comprimentoPia;
-    let precoPia = areaPia * precoMaterial;
+    let area_pia = larg_pia * comp_pia;
+    let preço_pia = area_pia * p_materiais;
 
-    let ladosSaia = (ladosMenores * larguraPia) + (ladosMaiores * comprimentoPia);
-    let areaSaia = ladosSaia * larguraSaia;
-    let precoSaia = areaSaia * precoMaterial;
+    let lados_saia = (lados_m_saia * larg_pia) + (lados_M_saia * comp_pia);
+    let area_saia = lados_saia * larg_saia;
+    let valor_saia = area_saia * p_materiais;
 
-    let ladosEspelho = (ladosMenoresEspelho * larguraPia) + (ladosMaioresEspelho * comprimentoPia);
-    let areaEspelho = ladosEspelho * larguraEspelho;
-    let precoEspelho = areaEspelho * precoMaterial;
+    let lados_espelho = (lados_m_espelho * larg_pia) + (lados_M_espelho * comp_pia);
+    let area_espelho = lados_espelho * larg_espelho;
+    let valor_espelho = area_espelho * p_materiais;
 
-    let comprimentoSaia = ladosSaia;
-    let precoAcabamentoTotal = comprimentoSaia * precoAcabamento;
+    let comp_saia = lados_saia;
+    let p_acabamentoTotal = comp_saia * p_acabamento;
 
-    let valorTotal = precoPia + precoSaia + precoEspelho + precoAcabamentoTotal + precoCubas + cooktop_;
+    let valorTotal = preço_pia + valor_saia + valor_espelho + p_acabamentoTotal + p_cubas + p_cooktop;
     document.getElementById("resultado").innerHTML = `
         O valor total da pia é <strong>R$${valorTotal.toFixed(2)}</strong>;<br>
-        Preço da área da pia: R$${precoPia.toFixed(2)};<br>
-        Preço da saia: R$${precoSaia.toFixed(2)};<br>
-        Preço do espelho: R$${precoEspelho.toFixed(2)};<br>
-        Preço do acabamento: R$${precoAcabamentoTotal.toFixed(2)};<br>
-        Preço da cuba: R$${precoCubas.toFixed(2)};<br>
-        Corte Cooktop: R$${cooktop_.toFixed(2)}.<br>
+        Preço da área da pia: R$${preço_pia.toFixed(2)};<br>
+        Preço da saia: R$${valor_saia.toFixed(2)};<br>
+        Preço do espelho: R$${valor_espelho.toFixed(2)};<br>
+        Preço do acabamento: R$${p_acabamentoTotal.toFixed(2)};<br>
+        Preço da cuba: R$${p_cubas.toFixed(2)};<br>
+        Corte Cooktop: R$${p_cooktop.toFixed(2)}.<br>
         Obs: <br>
         Material utilizado: ${material};<br>
-        Preço do Material: R$${precoMaterial.toFixed(2)}.
+        Preço do Material: R$${p_materiais.toFixed(2)}.
         `;
     }
+    
     //saber oq esá sendo selecionado
-const checkboxLado = document.querySelectorAll('.checkbox-lado');
-const checkboxLadoEspelho = document.querySelectorAll('.checkbox-lado-espelho');
-const opcoesSelecionadas = document.getElementById('opcoes-selecionadas');
+const check_box_lado = document.querySelectorAll('.checkbox-lado');
+const check_box_lado_espelho = document.querySelectorAll('.checkbox-lado-espelho');
+const opções_selecionadas = document.getElementById('opcoes-selecionadas');
 
-function exibirOpcoesSelecionadas() {
-let opcoes = "Opções selecionadas: ";
-let algumaOpcaoSelecionada = false;
+function exibir_opções_selecionadas() {
+let opções = "Opções selecionadas: ";
+let opção_selecionada = false;
 
-checkboxLado.forEach(checkbox => {
+check_box_lado.forEach(checkbox => {
     if (checkbox.checked) {
-    algumaOpcaoSelecionada = true;
-    opcoes += "saia " + checkbox.getAttribute('data-lado') + ", ";
+    opção_selecionada = true;
+    opções += "saia " + checkbox.getAttribute('data-lado') + ", ";
     }
 });
 
-checkboxLadoEspelho.forEach(checkbox => {
+check_box_lado_espelho.forEach(checkbox => {
     if (checkbox.checked) {
-    algumaOpcaoSelecionada = true;
-    opcoes += "espelho " + checkbox.getAttribute('data-lado') + ", ";
+    opção_selecionada = true;
+    opções += "espelho " + checkbox.getAttribute('data-lado') + ", ";
     }
 });
 
-if (algumaOpcaoSelecionada) {
-    opcoesSelecionadas.textContent = opcoes.slice(0, -2);
+if (opção_selecionada) {
+    opções_selecionadas.textContent = opções.slice(0, -2);
 } else {
-    opcoesSelecionadas.textContent = "";
+    opções_selecionadas.textContent = "";
 }
 }
 
-checkboxLado.forEach(checkbox => {
-checkbox.addEventListener('change', exibirOpcoesSelecionadas);
+check_box_lado.forEach(checkbox => {
+checkbox.addEventListener('change', exibir_opções_selecionadas);
 });
 
-checkboxLadoEspelho.forEach(checkbox => {
-checkbox.addEventListener('change', exibirOpcoesSelecionadas);
+check_box_lado_espelho.forEach(checkbox => {
+checkbox.addEventListener('change', exibir_opções_selecionadas);
 });
 
 // Função para atualizar o acabamento selecionado
-function atualizarAcabamento() {
-let ladosMenores = 0;
-let ladosMaiores = 0;
+function atualizar_acabamento() {
+let lados_M_saia = 0;
+let lados_m_saia = 0;
 
 const checkboxes = document.querySelectorAll('.checkbox-lado');
 const retangulo = document.querySelector('.retangulo');
 
 for (let checkbox of checkboxes) {
     const lado = checkbox.getAttribute('data-lado');
-    const ladoElemento = retangulo.querySelector(`.lado.${lado}`);
+    const lado_elemento = retangulo.querySelector(`.lado.${lado}`);
     
-const cubaElement = retangulo.querySelector('.cuba');
-const selectedCuba = document.getElementById("cubas").value;
+const cuba_element = retangulo.querySelector('.cuba');
+const cuba_selecionada = document.getElementById("cubas").value;
 
-if (selectedCuba !== "Sem Cuba") {
-    cubaElement.style.display = 'block';
+if (cuba_selecionada !== "Sem Cuba") {
+    cuba_element.style.display = 'block';
 } else {
-    cubaElement.style.display = 'none';
+    cuba_element.style.display = 'none';
 }
     
-    // Check if the corresponding side is selected in the espelho section
-    const espelhoCheckbox = document.querySelector(`.checkbox-lado-espelho[data-lado="${lado}"]`);
-    if (espelhoCheckbox && espelhoCheckbox.checked) {
-    checkbox.checked = false; // Uncheck the checkbox if the corresponding side is already selected
-    continue; // Skip to the next iteration
+// Verifique se o lado correspondente está selecionado na seção espelho    
+    const espelho_check_box = document.querySelector(`.checkbox-lado-espelho[data-lado="${lado}"]`);
+    if (espelho_check_box && espelho_check_box.checked) {
+    checkbox.checked = false; // Desmarque a caixa de seleção se o lado correspondente já estiver marcado
+    continuar; // Pular para a próxima iteração
     }
     
     if (checkbox.checked) {
-    ladoElemento.classList.add('lado-selecionado');
+    lado_elemento.classList.add('lado-selecionado');
     if (lado === 'superior' || lado === 'inferior') {
-        ladoElemento.classList.add('linha-verde');
-        ladosMaiores++;
+        lado_elemento.classList.add('linha-verde');
+        lados_M_saia++;
     } else {
-        ladosMenores++;
+        lados_m_saia++;
     }
     } else {
-    ladoElemento.classList.remove('lado-selecionado');
+    lado_elemento.classList.remove('lado-selecionado');
     if (lado === 'superior' || lado === 'inferior') {
-        ladoElemento.classList.remove('linha-verde');
+        lado_elemento.classList.remove('linha-verde');
     }
     }
 }
 
-document.getElementById('lados-maiores-saia').value = ladosMaiores.toString();
-document.getElementById('lados-menores-saia').value = ladosMenores.toString();
+document.getElementById('lados-maiores-saia').value = lados_M_saia.toString();
+document.getElementById('lados-menores-saia').value = lados_m_saia.toString();
 }
 
 // Função para atualizar o espelho selecionado   
-function atualizarEspelho() {
-let ladosMaioresEspelho = 0;
-let ladosMenoresEspelho = 0;
+function atualizar_espelho() {
+let lados_M_espelho = 0;
+let lados_m_espelho = 0;
 
 const checkboxes = document.querySelectorAll('.checkbox-lado-espelho');
 const retangulo = document.querySelector('.retangulo');
 
 for (let checkbox of checkboxes) {
     const lado = checkbox.getAttribute('data-lado');
-    const ladoElemento = retangulo.querySelector(`.lado.${lado}`);
+    const lado_elemento = retangulo.querySelector(`.lado.${lado}`);
     
-    // bloqueia se caso o usuario selecionar o mesmo lado
-    const saiaCheckbox = document.querySelector(`.checkbox-lado[data-lado="${lado}"]`);
-    if (saiaCheckbox && saiaCheckbox.checked) {
+    // bloqueia se caso o usuário selecionar o mesmo lado
+    const saia_check_box = document.querySelector(`.checkbox-lado[data-lado="${lado}"]`);
+    if (saia_check_box && saia_check_box.checked) {
     checkbox.checked = false; 
     continue;
     }
     
     if (checkbox.checked) {
-    ladoElemento.classList.add('lado-selecionado1');
+    lado_elemento.classList.add('lado-selecionado1');
     if (lado === 'superior' || lado === 'inferior') {
-        ladoElemento.classList.add('linha-azul');
-        ladosMaioresEspelho++;
+        lado_elemento.classList.add('linha-azul');
+        lados_M_espelho++;
     } else {
-        ladosMenoresEspelho++;
+        lados_m_espelho++;
     }
     } else {
-    ladoElemento.classList.remove('lado-selecionado1');
+    lado_elemento.classList.remove('lado-selecionado1');
     if (lado === 'superior' || lado === 'inferior') {
-        ladoElemento.classList.remove('linha-azul');
+        lado_elemento.classList.remove('linha-azul');
     }
     }
 }
 
-document.getElementById('lados-maiores-espelho').value = ladosMaioresEspelho.toString();
-document.getElementById('lados-menores-espelho').value = ladosMenoresEspelho.toString();
+document.getElementById('lados-maiores-espelho').value = lados_M_espelho.toString();
+document.getElementById('lados-menores-espelho').value = lados_m_espelho.toString();
 }
 
     // Função para inicializar o código da saia
     function init() {
-    const calcularButton = document.getElementById("calcular");
+    const botão_calcular = document.getElementById("calcular");
     const checkboxes = document.querySelectorAll('.checkbox-lado');
 
-    calcularButton.addEventListener("click", calcularValorTotal);
-    checkboxes.forEach(checkbox => checkbox.addEventListener('change', atualizarAcabamento));
+    botão_calcular.addcheck_box_saiaEventListener("click", calculo_valor_total);
+    checkboxes.forEach(checkbox => checkbox.addEventListener('change', atualizar_acabamento));
     }
 
     // Função para inicializar o código do espelho
     function init() {
-    const calcularButton = document.getElementById("calcular");
+    const botão_calcular = document.getElementById("calcular");
     const checkboxes = document.querySelectorAll('.checkbox-lado');
-    const checkboxesEspelho = document.querySelectorAll('.checkbox-lado-espelho');
+    const check_box_espelho = document.querySelectorAll('.checkbox-lado-espelho');
 
-    calcularButton.addEventListener("click", calcularValorTotal);
-    checkboxes.forEach(checkbox => checkbox.addEventListener('change', atualizarAcabamento));
-    checkboxesEspelho.forEach(checkbox => checkbox.addEventListener('change', atualizarEspelho));
+    botão_calcular.addEventListener("click", calculo_valor_total);
+    checkboxes.forEach(checkbox => checkbox.addEventListener('change', atualizar_acabamento));
+    check_box_espelho.forEach(checkbox => checkbox.addEventListener('change', atualizar_espelho));
 }
 
-function limparSelecoes() {
-const checkboxesSaia = document.querySelectorAll('.checkbox-lado');
-const checkboxesEspelho = document.querySelectorAll('.checkbox-lado-espelho');
+function limpar_seleção() {
+const check_box_saia = document.querySelectorAll('.checkbox-lado');
+const check_box_espelho = document.querySelectorAll('.checkbox-lado-espelho');
 
-checkboxesSaia.forEach(checkbox => {
+check_box_saia.forEach(checkbox => {
     checkbox.checked = false;
 });
 
-checkboxesEspelho.forEach(checkbox => {
+check_box_espelho.forEach(checkbox => {
     checkbox.checked = false;
 });
 
 // Limpa os valores
-atualizarAcabamento();
-atualizarEspelho();
+atualizar_acabamento();
+atualizar_espelho();
 }
 
 // Botão de limpeza
-const limparButton = document.getElementById("limpar");
-limparButton.addEventListener("click", limparSelecoes);
+const botão_limpar = document.getElementById("limpar");
+botão_limpar.addEventListener("click", limpar_seleção);
