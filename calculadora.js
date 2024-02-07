@@ -41,8 +41,8 @@
     "Cuba N¹46x30/17": 235,
     "Cuba N²56x32/14": 235,
     "Cuba N²56x32/17": 285,
-    "Cuba Oval Pequena": 185,
-    "Cuba Oval Grande": 205
+    "Cuba Oval Grande": 205,
+    "Cuba Oval Pequena": 185
     };
 
     const cooktop = {
