@@ -36,7 +36,7 @@
     };
 
     const cubas = {
-    "Sem Cuba": 35,
+    "Sem Cuba": 0,
     "Cuba N¹46x30/14": 215,
     "Cuba N¹46x30/17": 235,
     "Cuba N²56x32/14": 235,
