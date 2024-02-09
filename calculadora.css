@@ -113,7 +113,7 @@ button:hover {
     animation: fade-in 0.5s ease-out;
 }
 
-/* Estilo do cabeçalho */
+/*cabeçalho */
 .header {
     display: flex;
     align-items: center;
