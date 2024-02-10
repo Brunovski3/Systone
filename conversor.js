@@ -123,5 +123,5 @@ function numeroParaExtensoUnidades(numero) {
 function converterParaExtenso() {
     const numeroDigitado = parseFloat(document.getElementById("numero").value);
     const resultado = numeroParaExtenso(numeroDigitado);
-    document.getElementById("resultado").innerText = `O valor por extenso é: ${resultado}`;
+    document.getElementById("resultado-cheque").innerText = `O valor por extenso é: ${resultado}`;
 }

@@ -60,10 +60,10 @@
     const p_cooktop = cooktop[document.getElementById("cooktop").value];
     const acabamento = document.getElementById("acabamento").value;
     const p_acabamento = acabamentos[acabamento];
-    const comp_pia = parseFloat(document.getElementById("comprimento-pia").value);
-    const larg_pia = parseFloat(document.getElementById("largura-pia").value);
-    const larg_saia = parseFloat(document.getElementById("largura-saia").value);
-    const larg_espelho = parseFloat(document.getElementById("largura-espelho").value);
+    const comp_pia = (document.getElementById("comprimento-pia").value);
+    const larg_pia = (document.getElementById("largura-pia").value);
+    const larg_saia = (document.getElementById("largura-saia").value);
+    const larg_espelho = (document.getElementById("largura-espelho").value);
     const lados_M_saia = parseInt(document.getElementById("lados-maiores-saia").value);
     const lados_m_saia = parseInt(document.getElementById("lados-menores-saia").value);
     const lados_M_espelho = parseInt(document.getElementById("lados-maiores-espelho").value);
@@ -100,43 +100,43 @@
         `;
     }
     
-    //saber oq esá sendo selecionado
-const check_box_lado = document.querySelectorAll('.checkbox-lado');
-const check_box_lado_espelho = document.querySelectorAll('.checkbox-lado-espelho');
-const opções_selecionadas = document.getElementById('opcoes-selecionadas');
+//     //saber oq esá sendo selecionado
+// const check_box_lado = document.querySelectorAll('.checkbox-lado');
+// const check_box_lado_espelho = document.querySelectorAll('.checkbox-lado-espelho');
+// const opções_selecionadas = document.getElementById('opcoes-selecionadas');
 
-function exibir_opções_selecionadas() {
-let opções = "Opções selecionadas: ";
-let opção_selecionada = false;
+// function exibir_opções_selecionadas() {
+// let opções = "Opções selecionadas: ";
+// let opção_selecionada = false;
 
-check_box_lado.forEach(checkbox => {
-    if (checkbox.checked) {
-    opção_selecionada = true;
-    opções += "saia " + checkbox.getAttribute('data-lado') + ", ";
-    }
-});
+// check_box_lado.forEach(checkbox => {
+//     if (checkbox.checked) {
+//     opção_selecionada = true;
+//     opções += "saia " + checkbox.getAttribute('data-lado') + ", ";
+//     }
+// });
 
-check_box_lado_espelho.forEach(checkbox => {
-    if (checkbox.checked) {
-    opção_selecionada = true;
-    opções += "espelho " + checkbox.getAttribute('data-lado') + ", ";
-    }
-});
+// check_box_lado_espelho.forEach(checkbox => {
+//     if (checkbox.checked) {
+//     opção_selecionada = true;
+//     opções += "espelho " + checkbox.getAttribute('data-lado') + ", ";
+//     }
+// });
 
-if (opção_selecionada) {
-    opções_selecionadas.textContent = opções.slice(0, -2);
-} else {
-    opções_selecionadas.textContent = "";
-}
-}
+// if (opção_selecionada) {
+//     opções_selecionadas.textContent = opções.slice(0, -2);
+// } else {
+//     opções_selecionadas.textContent = "";
+// }
+// }
 
-check_box_lado.forEach(checkbox => {
-checkbox.addEventListener('change', exibir_opções_selecionadas);
-});
+// check_box_lado.forEach(checkbox => {
+// checkbox.addEventListener('change', exibir_opções_selecionadas);
+// });
 
-check_box_lado_espelho.forEach(checkbox => {
-checkbox.addEventListener('change', exibir_opções_selecionadas);
-});
+// check_box_lado_espelho.forEach(checkbox => {
+// checkbox.addEventListener('change', exibir_opções_selecionadas);
+// });
 
 // Função para atualizar o acabamento selecionado
 function atualizar_acabamento() {
@@ -150,20 +150,21 @@ for (let checkbox of checkboxes) {
     const lado = checkbox.getAttribute('data-lado');
     const lado_elemento = retangulo.querySelector(`.lado.${lado}`);
     
-const cuba_element = retangulo.querySelector('.cuba');
-const cuba_selecionada = document.getElementById("cubas").value;
+    const cuba_element = retangulo.querySelector('.cuba');
+    const cuba_selecionada = document.getElementById("cubas").value;
 
-if (cuba_selecionada !== "Sem Cuba") {
-    cuba_element.style.display = 'block';
-} else {
-    cuba_element.style.display = 'none';
-}
+    if (cuba_selecionada !== "Sem Cuba") {
+        cuba_element.style.display = 'block';
+    } else {
+        cuba_element.style.display = 'none';
+    }
+
     
 // Verifique se o lado correspondente está selecionado na seção espelho    
     const espelho_check_box = document.querySelector(`.checkbox-lado-espelho[data-lado="${lado}"]`);
     if (espelho_check_box && espelho_check_box.checked) {
     checkbox.checked = false; // Desmarque a caixa de seleção se o lado correspondente já estiver marcado
-    continuar; // Pular para a próxima iteração
+    continue; // Pular para a próxima iteração
     }
     
     if (checkbox.checked) {
@@ -229,10 +230,12 @@ document.getElementById('lados-menores-espelho').value = lados_m_espelho.toStrin
     function init() {
     const botão_calcular = document.getElementById("calcular");
     const checkboxes = document.querySelectorAll('.checkbox-lado');
+    const check_box_espelho = document.querySelectorAll('.checkbox-lado-espelho');
 
-    botão_calcular.addcheck_box_saiaEventListener("click", calculo_valor_total);
+    botão_calcular.addEventListener("click", calculo_valor_total);
     checkboxes.forEach(checkbox => checkbox.addEventListener('change', atualizar_acabamento));
-    }
+    check_box_espelho.forEach(checkbox => checkbox.addEventListener('change', atualizar_espelho));
+}
 
     // Função para inicializar o código do espelho
     function init() {
