@@ -199,6 +199,15 @@ for (let checkbox of checkboxes) {
     const lado = checkbox.getAttribute('data-lado');
     const lado_elemento = retangulo.querySelector(`.lado.${lado}`);
     
+    const cuba_element = retangulo.querySelector('.cuba');
+    const cuba_selecionada = document.getElementById("cubas").value;
+
+    if (cuba_selecionada !== "Sem Cuba") {
+        cuba_element.style.display = 'block';
+    } else {
+        cuba_element.style.display = 'none';
+    }
+    
     // bloqueia se caso o usuário selecionar o mesmo lado
     const saia_check_box = document.querySelector(`.checkbox-lado[data-lado="${lado}"]`);
     if (saia_check_box && saia_check_box.checked) {
