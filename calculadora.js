@@ -21,7 +21,7 @@
     "Piracema": 580,
     "Preto Absoluto": 1575,
     "Preto Escovado": 650,
-    "Preto São Gabriel": 480,
+    "Preto São Gabriel": 500,
     "Quartzo Branco": 1650,
     "Santa Cecília": 345,
     "Travertino": 400,
@@ -32,7 +32,7 @@
     const acabamentos = {
     "Boleado": 70,
     "Reto": 50,
-    "Meia esquadria": 80
+    "Meia esquadria": 85
     };
 
     const cubas = {
