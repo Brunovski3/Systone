@@ -37,6 +37,9 @@
 
     const cubas = {
     "Sem Cuba": 0,
+    "Corte da Chopeira": 90,
+    "Corte da Cuba": 120,
+    "Corte da Cuba Gourmet": 180,
     "Cuba N¹46x30/14": 215,
     "Cuba N¹46x30/17": 235,
     "Cuba N²56x32/14": 235,
