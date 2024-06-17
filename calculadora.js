@@ -6,7 +6,7 @@
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
     "Branco Dallas": 345,
-    "Branco Paraná Claro": 1800,
+    "Branco Paraná Claro": 1750,
     "Branco Paraná Escuro": 1400,
     "Branco Prime": 1000,
     "Branco Siena": 540,
@@ -22,9 +22,10 @@
     "Preto Absoluto": 1575,
     "Preto Escovado": 650,
     "Preto São Gabriel": 500,
-    "Quartzo Branco": 1650,
+    "Quartzo Branco": 1380,
+    "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
-    "Travertino": 400,
+    "Travertino": 480,
     "Verde": 350,
     "Via Láctea": 650
     };
