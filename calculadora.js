@@ -21,12 +21,12 @@
     "Piracema": 580,
     "Preto Absoluto": 1575,
     "Preto Escovado": 650,
-    "Preto São Gabriel": 500,
+    "Preto São Gabriel": 450,
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
-    "Travertino": 480,
-    "Verde": 350,
+    "Travertino": 400,
+    "Verde": 300,
     "Via Láctea": 650
     };
 
