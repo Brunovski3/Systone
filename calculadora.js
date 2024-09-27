@@ -18,7 +18,7 @@
     "Marrom Café Comercial": 425,
     "Marrom Coral": 450,
     "Ocre Itabira": 300,
-    "Piracema": 580,
+    "Piracema": 600,
     "Preto Absoluto": 1575,
     "Preto Escovado": 650,
     "Preto São Gabriel": 500,
