@@ -14,6 +14,7 @@
     "Cinza Corumbá": 300,
     "Crema Marfil": 1400,
     "Itaúnas": 550,
+    "Itaúnas Escovado": 720,
     "Marrom Café": 620,
     "Marrom Café Comercial": 425,
     "Marrom Coral": 450,
