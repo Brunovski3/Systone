@@ -3,6 +3,7 @@
 
     const materiais = {
     "Ardósia": 230,
+    "Ardósia Bipolida": 270,
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
     "Branco Dallas": 345,
@@ -14,21 +15,21 @@
     "Cinza Corumbá": 300,
     "Crema Marfil": 1400,
     "Itaúnas": 550,
-    "Itaúnas Escovado": 720,
+    "Itaúnas Escovado": 780,
     "Marrom Café": 620,
     "Marrom Café Comercial": 425,
     "Marrom Coral": 450,
     "Ocre Itabira": 300,
     "Piracema": 600,
     "Preto Absoluto": 1575,
-    "Preto Escovado": 650,
+    "Preto Escovado": 625,
     "Preto São Gabriel": 450,
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
     "Travertino": 400,
     "Verde": 300,
-    "Via Láctea": 650
+    "Via Láctea": 625
     };
 
     const acabamentos = {
@@ -40,8 +41,10 @@
     const cubas = {
     "Sem Cuba": 0,
     "Corte da Chopeira": 90,
-    "Corte da Cuba": 120,
-    "Corte da Cuba Gourmet": 180,
+    "Corte da Cuba": 90,
+    "Corte da Cuba Gourmet": 120,
+    "Corte Lixeira": 80,
+    "Corte Calha úmida": 85,
     "Cuba N¹46x30/14": 215,
     "Cuba N¹46x30/17": 235,
     "Cuba N²56x32/14": 235,
