@@ -44,7 +44,7 @@
     "Corte da Cuba": 90,
     "Corte da Cuba Gourmet": 120,
     "Corte Lixeira": 80,
-    "Corte Calha úmida": 85,
+    "Corte Calha Úmida": 85,
     "Cuba N¹46x30/14": 215,
     "Cuba N¹46x30/17": 235,
     "Cuba N²56x32/14": 235,
