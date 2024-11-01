@@ -27,6 +27,7 @@
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
+    "Taj Mahal": 2170,
     "Travertino": 400,
     "Verde": 300,
     "Via Láctea": 625
