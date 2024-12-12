@@ -7,7 +7,7 @@
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
     "Branco Dallas": 345,
-    "Branco Paraná Claro": 1750,
+    "Branco Paraná Claro": 1450,
     "Branco Paraná Escuro": 1400,
     "Branco Prime": 1000,
     "Branco Siena": 540,
