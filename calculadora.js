@@ -59,10 +59,9 @@
     "Com Corte Cooktop": 60
     };
 
-    // Função para calcular o valor total
+    
     function calculo_valor_total() {
 
-    // Obtenção dos valores selecionados
     const material = document.getElementById("material").value;
     const p_materiais = materiais[material];
     const p_cubas = cubas[document.getElementById("cubas").value];
@@ -79,7 +78,7 @@
     const lados_m_espelho = parseInt(document.getElementById("lados-menores-espelho").value);
 
 
-    // Cálculos
+
     let area_pia = larg_pia * comp_pia;
     let preço_pia = area_pia * p_materiais;
 
@@ -108,44 +107,6 @@
         Preço do Material: R$${p_materiais.toFixed(2)}.
         `;
     }
-    
-//     //saber oq esá sendo selecionado
-// const check_box_lado = document.querySelectorAll('.checkbox-lado');
-// const check_box_lado_espelho = document.querySelectorAll('.checkbox-lado-espelho');
-// const opções_selecionadas = document.getElementById('opcoes-selecionadas');
-
-// function exibir_opções_selecionadas() {
-// let opções = "Opções selecionadas: ";
-// let opção_selecionada = false;
-
-// check_box_lado.forEach(checkbox => {
-//     if (checkbox.checked) {
-//     opção_selecionada = true;
-//     opções += "saia " + checkbox.getAttribute('data-lado') + ", ";
-//     }
-// });
-
-// check_box_lado_espelho.forEach(checkbox => {
-//     if (checkbox.checked) {
-//     opção_selecionada = true;
-//     opções += "espelho " + checkbox.getAttribute('data-lado') + ", ";
-//     }
-// });
-
-// if (opção_selecionada) {
-//     opções_selecionadas.textContent = opções.slice(0, -2);
-// } else {
-//     opções_selecionadas.textContent = "";
-// }
-// }
-
-// check_box_lado.forEach(checkbox => {
-// checkbox.addEventListener('change', exibir_opções_selecionadas);
-// });
-
-// check_box_lado_espelho.forEach(checkbox => {
-// checkbox.addEventListener('change', exibir_opções_selecionadas);
-// });
 
 // Função para atualizar o acabamento selecionado
 function atualizar_acabamento() {
@@ -196,7 +157,6 @@ document.getElementById('lados-maiores-saia').value = lados_M_saia.toString();
 document.getElementById('lados-menores-saia').value = lados_m_saia.toString();
 }
 
-// Função para atualizar o espelho selecionado   
 function atualizar_espelho() {
 let lados_M_espelho = 0;
 let lados_m_espelho = 0;
