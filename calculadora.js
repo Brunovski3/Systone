@@ -23,13 +23,13 @@
     "Piracema": 600,
     "Preto Absoluto": 1575,
     "Preto Escovado": 625,
-    "Preto São Gabriel": 450,
+    "Preto São Gabriel": 490,
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
     "Taj Mahal": 2170,
     "Travertino": 400,
-    "Verde": 300,
+    "Verde": 360,
     "Via Láctea": 625
     };
 
