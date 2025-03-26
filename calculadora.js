@@ -2,7 +2,7 @@
 
 
     const materiais = {
-    "Ardósia": 230,
+    "Ardósia": 250,
     "Ardósia Bipolida": 270,
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
@@ -27,7 +27,7 @@
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
     "Santa Cecília": 345,
-    "Taj Mahal": 2170,
+    "Taj Mahal": 1900,
     "Travertino": 400,
     "Verde": 360,
     "Via Láctea": 625
@@ -43,7 +43,7 @@
     "Sem Cuba": 0,
     "Corte da Chopeira": 90,
     "Corte da Cuba": 90,
-    "Corte da Cuba Gourmet": 120,
+    "Corte da Cuba Gourmet": 170,
     "Corte Lixeira": 80,
     "Corte Calha Úmida": 85,
     "Cuba N¹46x30/14": 215,
