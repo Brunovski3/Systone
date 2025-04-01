@@ -14,6 +14,7 @@
     "Cinza Castelo": 300,
     "Cinza Corumbá": 300,
     "Crema Marfil": 1400,
+    "Dolomitico Pegasus": 700,
     "Itaúnas": 550,
     "Itaúnas Escovado": 780,
     "Marrom Café": 620,
