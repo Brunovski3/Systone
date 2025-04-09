@@ -1,4 +1,4 @@
-    // Dados de materiais, acabamentos, cubas e cooktop;
+// Dados de materiais, acabamentos, cubas e cooktop;
 
 
     const materiais = {
@@ -6,13 +6,14 @@
     "Ardósia Bipolida": 270,
     "Arabesco Samoa": 290,
     "Bege Prime": 980,
-    "Branco Dallas": 345,
+    "Branco Dallas": 360,
     "Branco Paraná Claro": 1450,
     "Branco Paraná Escuro": 1400,
     "Branco Prime": 1000,
     "Branco Siena": 540,
     "Cinza Castelo": 300,
-    "Cinza Corumbá": 300,
+    "Cinza_Andorinha": 325,
+    "Cinza Corumbá": 330,
     "Crema Marfil": 1400,
     "Dolomitico Pegasus": 700,
     "Itaúnas": 550,
@@ -27,7 +28,7 @@
     "Preto São Gabriel": 490,
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
-    "Santa Cecília": 345,
+    "Santa Cecília": 380,
     "Taj Mahal": 1900,
     "Travertino": 400,
     "Verde": 360,
