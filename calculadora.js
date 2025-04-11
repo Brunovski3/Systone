@@ -11,6 +11,7 @@
     "Branco Paraná Escuro": 1400,
     "Branco Prime": 1000,
     "Branco Siena": 540,
+    "Calacatta Fasano": 1210,
     "Cinza Castelo": 300,
     "Cinza_Andorinha": 325,
     "Cinza Corumbá": 330,
