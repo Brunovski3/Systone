@@ -33,7 +33,7 @@
     "Taj Mahal": 1900,
     "Travertino": 400,
     "Verde": 360,
-    "Via Láctea": 625
+    "Via Láctea": 650
     };
 
     const acabamentos = {
