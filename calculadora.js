@@ -26,6 +26,7 @@
     "Piracema": 600,
     "Preto Absoluto": 1575,
     "Preto Escovado": 625,
+    "Preto Makalu": 650,
     "Preto São Gabriel": 490,
     "Quartzo Branco": 1380,
     "Quartzo Cinza": 1300,
